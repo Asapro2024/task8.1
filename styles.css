@@ -1,0 +1,856 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.mySlides1 {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides1 img{
+    height: 400px;
+    filter: grayscale();
+    margin-bottom: 0;
+  }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides1 .text{
+    color: #ffffff;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.753) 2px 2px;
+    opacity: 70%;
+  }
+  .mySlides1 .text:hover{
+    opacity: 100%;
+  }
+  .mySlides1 .text h1{
+    font-size: 100px;
+    margin-bottom: 15px;
+  }
+  .mySlides1 .text p{
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-bottom: 20px;
+  }
+  .mySlides1 .text button{
+    font-size: 12px;
+    margin-bottom: 20px;
+    width: 170px;
+    height: 30px;
+    margin-bottom: 70px;
+    background-color: rgb(47, 101, 182);
+    border: none;
+    color: white;
+  }
+  .mySlides1 .text button:hover{
+    background-color: rgb(32, 32, 205);
+  }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: 1px solid #bbb;
+  position: relative;
+}
+
+.doter{
+    background-color: rgb(26, 59, 66);
+    margin: 0 46%;
+    position: relative;
+    bottom: 60px;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+  }
+
+.active {
+  background-color: rgb(26, 59, 66);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.header{
+    background-color: rgb(26, 59, 66);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8% 0 3%;
+    position: relative;
+    top: -60px;
+  }
+  .logo{
+    display: flex;
+    color: white;
+    
+  }
+  .logo i{
+    font-size: 60px;
+    padding-right: 20px;
+  }
+  p b{
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+  }
+  .header ul{
+    display: flex;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header ul li{
+    padding: 40px 10px;
+    border-top: 4px solid transparent;
+  }
+  .header ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    transition: all 0.3s;
+  }
+  .header ul li:hover{
+    border-top: 4px solid rgb(1, 177, 217);
+  }
+  
+  .header ul li:hover a{
+    color: rgb(1, 177, 217);
+  }
+  .dropdown{
+    display: none;
+  }
+  .header ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    top: 97px;
+    background-color: rgba(26, 59, 66, 0.788);
+    border-top: 3px solid rgb(1, 177, 217);
+  }
+  
+  .header ul li:hover .dropdown ul{
+    display: block;
+    margin: 0px;
+  }
+  .header ul li:hover .dropdown ul li{
+    width: 170px;
+    padding: 7px 10px;
+    height: 40px;
+    border-bottom: 1px solid rgb(26, 59, 66);
+  }
+  .header ul li:hover .dropdown ul li:hover{
+    border-top: none;
+    background-color: rgb(72, 155, 173);
+  }
+  .header ul li:hover .dropdown ul li a{
+    color: white;
+  }
+  .dropdown-1{
+    display: none;
+  }
+  .dropdown ul li:hover .dropdown-1{
+    display: block;
+    position: absolute;
+    left: 170px;
+    background-color: rgba(26, 59, 66, 0.788);
+    margin-top: -25px;
+  }
+  .dropdown-2{
+    display: none;
+  }
+  .dropdown ul li:hover .dropdown-2{
+    display: block;
+    position: absolute;
+    right: 170px;
+    background-color: rgba(26, 59, 66, 0.788);
+    margin-top: -25px;
+  }
+  .mobile{
+    display: none;
+  }
+  .fcon{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      flex: 2;
+      font-size: 18px;
+      padding: 10px 30px 40px 30px;
+      background-color: #ffffff;
+  }
+  .im1_1{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .text1{
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .text2{
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .btn1{
+    background-color: rgb(67, 121, 206);
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+  }
+  .text3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .reslist{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .text4{
+    font-size: 40px;
+    padding-right: 20px;
+  }
+  .logcon_list{
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .img2{
+    margin-right: 15px;
+  }
+  .textmin{
+    text-decoration: none;
+  }
+  .textmin:hover{
+    text-decoration: underline;
+  }
+  .shuffle{
+    display: flex;
+    padding: 30px;
+    background-color: #dedbdb;
+  }
+  .shlist img{
+    width: 400px;
+    padding-right: 100px;
+  }
+  .text2 i{
+    padding-right: 30px;
+    font-weight: 5000px;
+  }
+  .shlist .text3{
+    padding-top: 50px;
+  }
+  .btn2{
+    width: 120px;
+    height: 25px;
+    margin: 20px;
+    background-color: rgb(67, 121, 206);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+  }
+  .btn3{
+    width: 120px;
+    height: 25px;
+    margin: 20px;
+    background-color: rgb(255, 176, 6);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+  }
+  .mySlides1 {
+    display: none;
+  }
+  .infosec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px 50px 0 50px;
+    gap: 100px;
+  }
+  .text5{
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+  .infoflex{
+    display: flex;
+    margin: 50px 0 50px 0;
+  }
+.infoflex img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.text6{
+    font-size: 25px;
+    color: rgb(0, 180, 216);
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.in .fa-solid{
+    margin-right: 10px;
+}
+.mySlides .text2{
+    border: 1px solid rgb(163, 175, 186);
+    padding: 20px;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+#inn{
+    width: 80%;
+}
+.mySlides i{
+    font-size: 40px;
+    margin: 0;
+    color: rgb(163, 175, 186);
+}
+.text7{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}.dot1 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 1px solid #bbb;
+    position: relative;
+  }
+  
+  .doter1{
+      margin: 0 auto;
+      position: relative;
+      bottom: 0px;
+      padding: 10px;
+      border-radius: 8px 8px 0 0;
+    }
+  
+  .active {
+    background-color: rgb(26, 59, 66);
+  }
+  hr{
+    color: rgb(169, 180, 192);
+    margin-top: 40px;
+    border: 1.5px solid;
+  }
+  .fa-arrow-up{
+    color: white;
+    background-color: rgb(12, 109, 189);
+    width: 70px;
+    height: 70px; 
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: 50%;
+    padding-top: 20px;
+    transition: 1s;
+    position: relative;
+    bottom: 35px;
+  }
+  .fa-arrow-up:hover{
+    transform: rotate(360deg);
+  }
+  .colum4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 20px 80px 20px;
+    gap: 20px;
+    margin-bottom: 10px;
+    flex: 2;
+  }
+  #hhr{
+    color: rgb(169, 180, 192);
+    margin: 10px 0;
+    border: 1px solid;
+  }
+  .clm1 a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(39, 122, 216);
+    
+  }
+  #hhr1{
+    color: rgb(169, 180, 192);
+    margin: 10px 0;
+    border: 1px solid;
+  }
+  .hin121{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.hin122{
+    font-size: 15px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hin123{
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(169, 180, 192);
+    padding-left: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.hin124{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: rgb(39, 122, 216);
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+.hin125{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#hin126{
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(140, 151, 161);
+    border-radius: 50%;
+    padding-top: 6px;
+    margin-right: 8px;
+    text-align: center;
+}
+#txt2{
+    padding-top: 15px;
+}
+.hin133{
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.details{
+    display: flex;
+}
+#hin134{
+    margin-top: 30px;
+}
+.details i{
+    font-size: 14px;
+    margin-right: 10px;
+}
+.details p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo1{
+    display: flex;
+    color: white;
+    background-color: rgb(12, 109, 189);
+    padding: 20px 30px;
+    border-radius: 6px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    bottom: 45px;
+  }
+  .logo1 i{
+    font-size: 40px;
+    padding-right: 10px;
+    transition-duration: 1s;
+  }
+  .logo1 p b{
+    font-size: 30px;
+    position: relative;
+    top: 0px;
+  }
+  
+  .logo1:hover i{
+    transform: rotate(360deg);
+  }
+ #foot{
+    margin: 10px 0 40px 0;
+ }
+#foot a{
+    text-decoration: none;
+}
+
+/* mobile screen */
+@media (max-width: 600px) {
+    body{
+        width: 100%;
+    }
+      .mySlides1 img{
+          max-height: 150px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+      /* Caption text */
+      .text {
+        display: none;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 8px;
+        width: 8px;
+      }
+      
+      .doter{
+          margin: 0 40%;
+        }
+     .header{
+        height: 150px;
+        text-align: center;
+        position: relative;
+        top: -60px;
+        display: block;
+        padding-top: 20px;
+        }
+        .logo{
+        display: flex;
+        color: white;
+        
+        }
+        .logo i{
+        font-size: 40px;
+        padding-right: 20px;
+        }
+        p b{
+        font-size: 30px;
+        position: relative;
+        top: 0px;
+        }
+        .header ul{
+        display: none;
+        }
+        .mobile{
+            display: flex;  
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropbtn {
+            background-color: rgb(18, 173, 207);
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 375px;
+            text-align: left;
+            margin-top: 15px;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: block;
+            background-color: rgb(26, 59, 66);
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #3c94ff;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .fcon{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            flex: 2;
+            font-size: 18px;
+            padding: 0 15px 20px 15px;
+            background-color: #ffffff;
+        }
+        .shuffle{
+            display: block;
+            padding: 30px;
+            background-color: #dedbdb;
+          }
+          .shlist img{
+            width: 100%;
+            padding-right: 0px;
+          }
+          .text2 i{
+            padding-right: 30px;
+            font-weight: 5000px;
+          }
+          .shlist .text3{
+            padding-top: 50px;
+          }
+          .btn2{
+            width: 120px;
+            height: 25px;
+            margin: 0px 20px;
+            background-color: rgb(67, 121, 206);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 12px;
+            display: block;
+          }
+          .btn3{
+            width: 120px;
+            height: 25px;
+            margin: 20px;
+            background-color: rgb(255, 176, 6);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 12px;
+          }
+        .infosec{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          padding: 100px 20px 0 20px;
+          gap: 100px;
+        }
+        .text5{
+          font-size: 25px;
+          padding-bottom: 15px;
+        }
+        .infoflex{
+          display: block;
+          margin: 50px 0 50px 0;
+        }
+      .infoflex img{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin-right: 30px;
+      }
+      .text6{
+          font-size: 25px;
+          color: rgb(0, 180, 216);
+          margin-bottom: 15px;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .in .fa-solid{
+          margin-right: 10px;
+      }
+      .mySlides .text2{
+          border: 2px solid rgb(163, 175, 186);
+          padding: 20px;
+          margin: 20px 0 0 0;
+          width: 100%;
+      }
+      #inn{
+          width: 100%;
+      }
+      .mySlides i{
+          font-size: 40px;
+          margin: 0;
+          color: rgb(163, 175, 186);
+      }
+      .text7{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+        }
+        .dot1 {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          border: 1px solid #bbb;
+          position: relative;
+        }
+        
+        .doter1{
+            margin: 0 auto;
+            position: relative;
+            bottom: 0px;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+          }
+        
+        .active {
+          background-color: rgb(26, 59, 66);
+        }
+        .colum4{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 50px 20px 80px 20px;
+            gap: 50px;
+            margin-bottom: 10px;
+            flex: 2;
+          }
+          #hhr{
+            color: rgb(169, 180, 192);
+            margin: 10px 0;
+            border: 1px solid;
+          }
+          .clm1 a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-decoration: none;
+            color: rgb(39, 122, 216);
+            
+          }
+          #hhr1{
+            color: rgb(169, 180, 192);
+            margin: 10px 0;
+            border: 1px solid;
+          }
+          .hin121{
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+        .hin122{
+            font-size: 15px;
+            padding-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hin123{
+            width: 100%;
+            height: 30px;
+            border: 1px solid rgb(169, 180, 192);
+            padding-left: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .hin124{
+            width: 120px;
+            height: 40px;
+            border: none;
+            background-color: rgb(39, 122, 216);
+            color: white;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+        .hin125{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        #hin126{
+            font-size: 12px;
+            width: 25px;
+            height: 25px;
+            background-color: rgb(140, 151, 161);
+            border-radius: 50%;
+            padding-top: 6px;
+            margin-right: 8px;
+            text-align: center;
+        }
+        #txt2{
+            padding-top: 15px;
+        }
+        .hin133{
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .details{
+            display: flex;
+        }
+        #hin134{
+            margin-top: 30px;
+        }
+        .details i{
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .details p{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo1{
+            display: flex;
+            color: white;
+            background-color: rgb(12, 109, 189);
+            padding: 15px 40px;
+            border-radius: 6px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            bottom: 30px;
+          }
+          .logo1 i{
+            font-size: 30px;
+            padding-right: 10px;
+            transition-duration: 1s;
+          }
+          .logo1 p b{
+            font-size: 25px;
+            position: relative;
+            top: 0px;
+          }
+          
+          .logo1:hover i{
+            transform: rotate(360deg);
+          }
+         #foot{
+            margin: 10px 15px 40px 15px;
+         }
+        #foot a{
+            text-decoration: none;
+        }
+        
+      
+}
+ 
